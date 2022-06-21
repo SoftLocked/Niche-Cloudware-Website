@@ -22,9 +22,3 @@
 .job-pro-promo {
     background: url(../Assets/Logos/JobPro/JobPro4K.png) center/cover;
 }
-
-.navbar-item.navbar-center {
-    flex-grow: 2;
-    flex-direction: row;
-    justify-content: center;
-}
