@@ -1,0 +1,30 @@
+.hero {
+    background: white url(../Assets/Backgrounds/LandingPage.png) center / cover;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        background: white url(../Assets/Backgrounds/LandingPage.png)center / cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background: white url(../Assets/Backgrounds/LandingPage.png)center / cover;
+    }
+}
+
+.center-button {
+    margin: 0 auto;
+    display: block;
+}
+
+.job-pro-promo {
+    background: url(../Assets/Logos/JobPro/JobPro4K.png) center/cover;
+}
+
+.navbar-item.navbar-center {
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: center;
+}
