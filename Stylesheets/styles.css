@@ -1,24 +1,24 @@
-.hero {
-    background: white url(../Assets/Backgrounds/LandingPage.png) center / cover;
+.hero-bg {
+    background: white url(../Assets/Backgrounds/LandingPage.png) center / cover !important;
+}
+
+.job-pro-promo {
+    background: url(../Assets/Logos/JobPro/JobPro4K.png) center/cover;
 }
 
 @media (max-width: 1024px) {
-    .hero {
-        background: white url(../Assets/Backgrounds/LandingPage.png)center / cover;
+    .job-pro-promo {
+        background: url(../Assets/Logos/JobPro/JobPro4K.png) center/cover;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        background: white url(../Assets/Backgrounds/LandingPage.png)center / cover;
+    .job-pro-promo {
+        background: url(../Assets/Logos/JobPro/JobPro4KTablet.png) center/cover;
     }
 }
 
 .center-button {
     margin: 0 auto;
     display: block;
-}
-
-.job-pro-promo {
-    background: url(../Assets/Logos/JobPro/JobPro4K.png) center/cover;
 }

@@ -34,11 +34,6 @@
     line-height: 1;
 }
 
-.is-transparent {
-    background-color: transparent !important;
-    border-color: transparent !important;
-}
-
 .center-container {
     position: relative;
     height: 200px;
@@ -79,4 +74,19 @@
     .tablet {
         display: flex;
     }
+}
+
+.is-transparent {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.is-primary {
+    background-color: #2C62AE !important;
+    border-color: transparent !important;
+
+}
+
+.is-primary-text {
+    color: #2C62AE !important;
 }
