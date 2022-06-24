@@ -28,7 +28,7 @@
             <!-- navbar -->
             <nav class="navbar">
                 <div class="navbar-brand">
-                    <a class="navbar-item">
+                    <a href="index.html" class="navbar-item">
                         <img src="Assets\Logos\NicheCloudware\Symbol\Black.png" alt="Logo" class="px-3 py-3"
                             style="max-height: 100px;">
                     </a>
@@ -41,32 +41,33 @@
                     <div class="navbar-item navbar-center">
                         <a class="navbar-item has-text-black mx-4 has-text-weight-normal">HOME</a>
                         <div class="navbar-item has-dropdown is-hoverable mx-4">
-                            <a class="navbar-link">SERVICES</a>
+                            <a href="Services/services.html" class="navbar-link">SERVICES</a>
 
                             <div class="navbar-dropdown">
 
-                                <a class="navbar-item">
+                                <a href="Services\services.html#job-pro-redirect" class="navbar-item">
                                     Job Pro by Niche Cloudware
                                 </a>
                                 <hr class="dropdown-divider">
-                                <a href="Services\Services.html#sap-redirect" class="navbar-item">
+                                <a href="Services\services.html#sap-redirect" class="navbar-item">
                                     SAP
                                 </a>
-                                <a class="navbar-item">
+                                <a href="Services\services.html#service-now-redirect" class="navbar-item">
                                     Service Now
                                 </a>
-                                <a class="navbar-item">
+                                <a href="Services\services.html#cyber-security-redirect" class="navbar-item">
                                     Cyber Security
                                 </a>
-                                <a class="navbar-item">
+                                <a href="Services\services.html#artificial-intelligence-redirect" class="navbar-item">
                                     Artificial Intelligence
                                 </a>
 
                             </div>
+
                         </div>
 
-                        <a class="navbar-item is-hoverable mx-4">ABOUT</a>
-                        <a class="navbar-item is-hoverable mx-4">CONTACT US</a>
+                        <a href="About\about.html" class="navbar-item is-hoverable mx-4">ABOUT</a>
+                        <a href="Contact\contact.html" class="navbar-item is-hoverable mx-4">CONTACT US</a>
                     </div>
                 </div>
             </nav>
@@ -82,14 +83,16 @@
                     Possibilities</h3>
                 <!-- learn more -->
                 <div class="buttons is-centered">
-                    <button class="button is-primary is-responsive is-large">See Our Services</button>
+                    <button onclick="window.location.href ='Services\\services.html';"
+                        class="button is-primary is-responsive is-large">See Our
+                        Services</button>
                 </div>
             </div>
     </section>
 
     <!-- introducting job pro -->
 
-    <section class="section is-fullheight" style="background-color: #000000; height: 940px; padding: 0;">
+    <section class="section" style="background-color: #000000; height: 100vh; padding: 0;">
         <div class="job-pro-promo" style="height: 100%;">
             <div class="center">
                 <div>
@@ -110,9 +113,11 @@
                                 Now</button>
                         </div>
                         <div class="column center is-2 is-responsive">
-                            <button class="button px-0 py-0 is-transparent has-text-white is-large">Learn
-                                More
-                            </button>
+                            <a href="Services\services.html#job-pro-redirect">
+                                <button class="button px-0 py-0 is-transparent has-text-white is-large">Learn
+                                    More
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -335,7 +340,9 @@
         <div class="columns is-variable is-centered">
 
             <div class="column center is-3">
-                <img src="Assets\Logos\NicheCloudware\Full\White.png" style="margin:0; padding:0; width:250px;">
+                <a href="index.html">
+                    <img src="Assets\Logos\NicheCloudware\Full\White.png" style="margin:0; padding:0; width:250px;">
+                </a>
             </div>
 
             <div class="column is-3 is-responsive center">
@@ -358,7 +365,14 @@
 
 </body>
 
-<script src="index.js">
+<script>
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+    burgerIcon.addEventListener('click', () => {
+        navbarMenu.classList.toggle('is-active');
+    })
+</script>
+<!--<script src="index.js">-->
 </script>
 
 </html>

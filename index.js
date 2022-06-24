@@ -1,12 +1,13 @@
 /****************************************************************************************************
 * Burger Menu
-****************************************************************************************************/
+* Included in the script tag of individual pages due to scoping issues
 
-const burgerIcon = document.getElementById('burger');
-const navbarMenu = document.getElementById('nav-links');
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
 burgerIcon.addEventListener('click', () => {
     navbarMenu.classList.toggle('is-active');
 })
+****************************************************************************************************/
 
 /****************************************************************************************************
 * Meet the Team (Tabbed Content)
