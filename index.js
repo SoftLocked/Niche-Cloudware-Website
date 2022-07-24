@@ -37,3 +37,76 @@ tabs.forEach((tab) => {
 
     });
 });
+
+/****************************************************************************************************
+* Dynamic Footer
+****************************************************************************************************/
+
+//index footer
+try {
+const indexFooter = document.querySelector(".main-footer")
+
+    indexFooter.innerHTML = `
+
+    <div class="columns is-variable is-centered">
+        
+            <div class="column center is-3">
+                <a href="index.html">
+                    <img src="Assets\\Logos\\NicheCloudware\\Full\\White.png" style="margin:0; padding:0; width:250px;">
+                </a>
+            </div>
+        
+            <div class="column is-3 is-responsive center">
+                <div class="content">
+                    <p class="my-2 has-text-weight-light" style="text-align: center;"> 17201, NW Viola Street, Portland
+                        97229,
+                        Oregon</p>
+                    <p class="my-2 has-text-weight-light" style="text-align: center;">+1.310.237.5924</p>
+                    <p class="my-2 has-text-weight-light" style="text-align: center;">hr@nichecloudware.com</p>
+                    <p class="my-2 has-text-weight-light" style="text-align: center;">careers@nichecloudware.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="m-0 mb-3 p-0" style="margin-left: 20% !important; width: 60%;">
+        
+        <p class="has-text-weight-light center">&copy; 2022 Niche Cloudware</p>
+
+`;
+} catch (e) {
+}
+
+//Other footers
+const footers = document.querySelectorAll(".other-page-footer");
+
+for (var i = 0; i < footers.length; i++) {
+    
+    footers[i].innerHTML = `
+    
+    <div class="columns is-variable is-centered">
+
+            <div class="column center is-3">
+                <a href="../index.html">
+                    <img src="..\\Assets\\Logos\\NicheCloudware\\Full\\White.png" style="margin:0; padding:0; width:250px;">
+                </a>
+            </div>
+
+            <div class="column is-3 is-responsive center">
+                <div class="content">
+                    <p class="my-2 has-text-weight-light" style="text-align: center;"> 17201, NW Viola Street, Portland
+                        97229,
+                        Oregon</p>
+                    <p class="my-2 has-text-weight-light" style="text-align: center;">+1.310.237.5924</p>
+                    <p class="my-2 has-text-weight-light" style="text-align: center;">hr@nichecloudware.com</p>
+                    <p class="my-2 has-text-weight-light" style="text-align: center;">careers@nichecloudware.com</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="m-0 mb-3 p-0" style="margin-left: 20% !important; width: 60%;">
+
+        <p class="has-text-weight-light center">&copy; 2022 Niche Cloudware</p>
+    
+    `;
+
+}
