@@ -22,3 +22,11 @@
     margin: 0 auto;
     display: block;
 }
+
+.service-cards {
+    background-color: #d0e9ff;
+}
+
+.service-cards:hover {
+    background-color: #8dcaff;
+}

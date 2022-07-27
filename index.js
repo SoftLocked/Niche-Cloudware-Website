@@ -77,11 +77,8 @@ const indexFooter = document.querySelector(".main-footer")
 }
 
 //Other footers
-const footers = document.querySelectorAll(".other-page-footer");
-
-for (var i = 0; i < footers.length; i++) {
-    
-    footers[i].innerHTML = `
+const footers = document.querySelectorAll(".other-page-footer");  
+    footers[0].innerHTML = `
     
     <div class="columns is-variable is-centered">
 
@@ -108,5 +105,3 @@ for (var i = 0; i < footers.length; i++) {
         <p class="has-text-weight-light center">&copy; 2022 Niche Cloudware</p>
     
     `;
-
-}
