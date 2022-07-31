@@ -2,6 +2,10 @@
     background: white url(../Assets/Backgrounds/LandingPage.png) center / cover !important;
 }
 
+.abt-bg {
+    background: url(../Assets/Backgrounds/AboutBackground.jpg) center / cover !important;
+}
+
 .job-pro-promo {
     background: url(../Assets/Logos/JobPro/JobPro4K.png) center/cover;
 }
